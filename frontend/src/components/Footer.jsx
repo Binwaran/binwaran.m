@@ -1,6 +1,5 @@
 import {FaLinkedin, FaGithub} from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Home from "../pages/Home";
 function Footer() {
   return (
     <footer className="fixed bottom-5 left-0 w-full text-white py-4 flex flex-col md:flex-row justify-center items-center gap-4">

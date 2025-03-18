@@ -5,7 +5,6 @@ import About from "./pages/About";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
-import TechStack from "./pages/TechStack";
 import Navbar from "./components/Navbar";
 import Login from "./pages/Login";
 import AdminPanel from "./pages/AdminPanel";

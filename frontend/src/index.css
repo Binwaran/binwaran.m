@@ -7,7 +7,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #0d0d0d;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -67,4 +67,19 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.home-container {
+  background: linear-gradient(135deg, #20002c, #c31432, #ff0000, #ff7300);
+  background-size: 400% 400%;
+  animation: gradientAnimation 8s ease infinite;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* ทำให้สีไหลไปเรื่อยๆ */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }

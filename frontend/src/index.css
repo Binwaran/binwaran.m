@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -15,71 +16,26 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+.shadow-neon {
+  box-shadow: 0 0 10px #ff0099, 0 0 20px #ff0099, 0 0 40px #ff0099, 0 0 80px #ff0099;
 }
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+.text-neon {
+  color: #ff0099;
+  text-shadow: 0 0 5px #ff0099, 0 0 10px #ff0099, 0 0 20px #ff0099;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.text-glow {
+  color: #ff0099 !important;
+  text-shadow: 
+    0 0 10px #ff0099, 
+    0 0 20px #ff0099,
+    0 0 40px #ff0099, 
+    0 0 80px #ff0099 !important;
 }
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
-.home-container {
-  background: linear-gradient(135deg, #20002c, #c31432, #ff0000, #ff7300);
-  background-size: 400% 400%;
-  animation: gradientAnimation 8s ease infinite;
-  height: 100vh;
-  width: 100vw;
-}
-
-/* ทำให้สีไหลไปเรื่อยๆ */
-@keyframes gradientAnimation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+.text-glow:hover {
+  text-shadow: 
+    0 0 20px #ff0099,
+    0 0 40px #ff0099, 
+    0 0 80px #ff0099,
+    0 0 160px #ff0099 !important;
 }

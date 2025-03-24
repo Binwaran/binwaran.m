@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function HeroSection() {
     return (
-      <section className="relative w-full h-[1080px] flex items-end p-10">
+      <section className="relative w-full h-[400px] sm:h-[500px] md:h-[700px] lg:h-[900px] flex items-end p-10">
       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 mt-10 text-center text-gray-900">
         <h1 className="text-7xl sm:text-[80px] md:text-[150px] lg:text-[200px] font-bodoniSC font-bold drop-shadow-[0_5px_10px_rgba(0,0,0,0.3)] leading-none z-0">NOFFFIE</h1>
       </div>
@@ -16,12 +16,12 @@ function HeroSection() {
         <span className="text-[10px] sm:text-[15px] md:text-[20px] lg:text-[30px]">Full-Stack Developer | Coder | Creator | Trader</span>
           </h2>
       </div>
-      <div className="relative flex-row w-full h-[200px] text-gray-500 z-41">
-          <div className="absolute bottom-[895px] left-5 md:bottom-[730px] md:left-50 lg:bottom-[620px] lg:left-65 transform -translate-x-1/2 text-center text-[10px] md:text-lg lg:text-xl drop-shadow-[0_5px_10px_rgba(0,0,0,0.3)] font-medium text-gray-500">
+      <div className="relative flex-row w-full text-gray-500 z-41">
+          <div className="absolute bottom-[200px] sm:bottom-[250px] left-5 md:bottom-[350px] md:left-50 lg:bottom-[450px] lg:left-65 transform -translate-x-1/2 text-center text-[10px] md:text-lg lg:text-xl drop-shadow-[0_5px_10px_rgba(0,0,0,0.3)] font-medium text-gray-500">
           <p className="">CODE IS MY LANGUAGE</p>
           <p>LIFE IS MY STACK.</p>
           </div>
-          <div className="absolute bottom-[590px] right-0 md:bottom-[680px] md:right-25 lg:bottom-[610px] lg:right-50 transform -translate-y-1/2 drop-shadow-[0_5px_10px_rgba(0,0,0,0.3)] text-right">
+          <div className="absolute bottom-[] sm:bottom-[190px] right-0 md:bottom-[330px] md:right-25 lg:bottom-[450px] lg:right-50 transform -translate-y-1/2 drop-shadow-[0_5px_10px_rgba(0,0,0,0.3)] text-right">
             <p className="text-xl md:text-[15px] lg:text-lg font-bold uppercase tracking-widest text-gray-500">Explore My</p>
             <h3 className="text-2xl md:text-[20px] lg:text-[30px] font-bold text-gray-500">Projects</h3>
             <Link to="/projects">

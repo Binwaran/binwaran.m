@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 export function Footer() {
   return (
-    <footer className="w-full h-[100px] bg-stone-400 px-6 py-4 text-2xl text-stone-800">
-      <div className="max-w-7xl h-full mx-auto flex justify-between items-center ">
+    <footer className="w-full  md:h-[100px] bg-stone-400 px-6 py-4 text-lg md:text-2xl text-stone-800">
+      <div className="max-w-7xl h-full mx-auto flex flex-col md:flex-row justify-between items-center gap-4 ">
         {/* ซ้าย: ข้อความ + ไอคอน */}
         <div className="flex items-center gap-4">
           <span>Get in touch</span>

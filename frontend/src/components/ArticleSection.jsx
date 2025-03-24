@@ -5,11 +5,12 @@ import { Search } from "lucide-react"
 export default function ArticleSection() {
   return (
     <section className="bg-stone-200 py-12">
-      <div className="max-w-5xl mx-auto px-4">
-        <h2 className="text-2xl font-bold mb-6">Latest articles</h2>
+    <div className="max-w mx-auto px-4">
+      <h2 className="text-2xl font-bold mb-6">Latest articles</h2>
 
-        {/* Tag filter */}
-        <div className="flex gap-4 mb-6 text-sm">
+      {/* Tag filter + Search อยู่แถวเดียวกัน */}
+      <div className="flex items-center justify-between gap-4 mb-6 text-sm flex-wrap sm:flex-nowrap">
+        <div className="flex gap-4">
           {["Highlight", "Cat", "Inspiration", "General"].map((tag, index) => (
             <button
               key={index}
@@ -24,16 +25,17 @@ export default function ArticleSection() {
           ))}
         </div>
 
-        {/* Search */}
-        <div className="relative max-w-md">
+        <div className="relative w-full sm:w-64 mt-2 sm:mt-0">
           <Input
             type="text"
             placeholder="Search"
-            className="pl-10"
+            className="pl-10 w-full"
           />
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />
         </div>
       </div>
-    </section>
+    </div>
+</section>
+
   )
 }

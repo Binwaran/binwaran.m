@@ -10,7 +10,7 @@ function Navbar() {
             <div className="flex justify-between items-center px-4">
                 {/* LOGO */}
                 <Link to="/">
-                <img src=".\public\namelogo.png" alt="" className="w-[100px] drop-shadow-xl sm:w-[200px]" />
+                <img src="/namelogo.png" alt="" className="w-[100px] drop-shadow-xl sm:w-[200px]" />
                 </Link>
 
                 {/* BUTTON HAMBURGER (เฉพาะ Mobile) */}

@@ -7,7 +7,7 @@ function HeroSection() {
         <h1 className="text-7xl sm:text-[80px] md:text-[150px] lg:text-[200px] font-bodoniSC font-bold drop-shadow-[0_5px_10px_rgba(0,0,0,0.3)] leading-none z-0">NOFFFIE</h1>
       </div>
       <div>
-        <img src=".\public\nofffiepic.png" alt="Nofffie picture" className="absolute top-8 sm:top-0 left-0 flex justify-center items-center w-[500px] drop-shadow-[0_5px_10px_rgba(0,0,0,0.3)] sm:w-[1500px] z-40"/>
+        <img src="/nofffiepic.png" alt="Nofffie picture" className="absolute top-8 sm:top-0 left-0 flex justify-center items-center w-[500px] drop-shadow-[0_5px_10px_rgba(0,0,0,0.3)] sm:w-[1500px] z-40"/>
       </div>
       <div className="w-full h-[200px] absolute top-42 sm:top-70 md:top-100 lg:top-130 left-1/2 transform -translate-x-1/2 mt-10 text-center text-gray-900 gap-0 z-40">
         <h2 className="text-stone-800 font-serif font-light drop-shadow-[0_5px_10px_rgba(0,0,0,0.3)] flex flex-col leading-none">

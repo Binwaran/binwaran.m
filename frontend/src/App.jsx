@@ -12,7 +12,8 @@ import Article from "./pages/Article";
 import Search from "./pages/Search";
 import Profile from "./pages/Profile";
 import Notifications from "./pages/Notifications";
-import Footer from "./components/Footer";
+import {Footer} from "./components/Footer";
+
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
           <Route path="/notifications" element={<Notifications/>} />
         </Routes>
       </main>
+      
       <Footer />
     </Router>
   );

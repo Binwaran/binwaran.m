@@ -1,10 +1,10 @@
 import HeroSection from "../components/HeroSection";
-import Journey from "../components/Journey";
+import ArticleSection from "../components/ArticleSection";
 const Home = () => {
     return (
       <div className="home-container">
         <HeroSection />
-        <Journey />
+        <ArticleSection/>
       </div>
     );
   };

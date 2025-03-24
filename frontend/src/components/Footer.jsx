@@ -1,31 +1,40 @@
-import {FaLinkedin, FaGithub} from "react-icons/fa";
+import { Linkedin, Github } from "lucide-react";
 import { Link } from "react-router-dom";
-function Footer() {
+
+export function Footer() {
   return (
-    <footer className="relative bottom-5 left-0 w-full text-white py-4 flex flex-col md:flex-row justify-center items-center gap-4">
-      {/* ซ้าย: Get in touch + โลโก้ LinkedIn & GitHub */}
-        <div className="w-[calc(100%-40px)] max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left px-5 py-3 rounded-lg shadow-lg">
-            <div className="flex flex-col md:flex-row items-center gap-2">
-                <p className="text-neon">Get in touch</p>
-                <div className="flex gap-2">
-                    <a href="https://www.linkedin.com/in/binwaran" target="_blank" rel="noopener noreferrer">
-                        <FaLinkedin className="text-2xl neon-icon hover:brightness-150 transition duration-300" />
-                    </a>
-                    <a href="https://github.com/Binwaran" target="_blank" rel="noopener noreferrer">
-                        <FaGithub className="text-2xl neon-icon hover:brightness-150 transition duration-300" />
-                    </a>
-                </div>
-            </div>
+    <footer className="w-full h-[100px] bg-stone-400 px-6 py-4 text-2xl text-stone-800">
+      <div className="max-w-7xl h-full mx-auto flex justify-between items-center ">
+        {/* ซ้าย: ข้อความ + ไอคอน */}
+        <div className="flex items-center gap-4">
+          <span>Get in touch</span>
+          <a
+            href="https://www.linkedin.com/in/binwaran"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-stone-500"
+          >
+            <Linkedin className="w-5 h-5" />
+          </a>
+          <a
+            href="https://github.com/Binwaran"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-stone-500"
+          >
+            <Github className="w-5 h-5" />
+          </a>
         </div>
 
-      {/* ขวา: Link กลับไปหน้า Home */}
-      <div className="mt-3 md:mt-0 md:pr-40">
-          <Link to="/home" className="text-neon hover:brightness-150 transition duration-300">
-              Home page
+        {/* ขวา: ลิงก์ Home */}
+        <div>
+          <Link to="/" className="underline hover:text-stone-500">
+            Home page
           </Link>
+        </div>
       </div>
     </footer>
   );
 }
 
-export default Footer;
+

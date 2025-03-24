@@ -1,6 +1,8 @@
 // src/components/ArticleSection.jsx
 import { Input } from "@/components/ui/input"
 import { Search } from "lucide-react"
+import BlogCard from "./BlogCard"
+import blogPosts from "../data/blogPosts";
 
 export default function ArticleSection() {
   return (
@@ -35,7 +37,21 @@ export default function ArticleSection() {
         </div>
       </div>
     </div>
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {blogPosts.map((post) => (
+        <BlogCard
+          key={post.id}
+          image={post.image}
+          category={post.category}
+          title={post.title}
+          description={post.description}
+          author={post.author}
+          date={post.date}
+        />
+      ))}
+    </section>
 </section>
+
 
   )
 }

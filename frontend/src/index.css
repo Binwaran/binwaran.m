@@ -2,13 +2,13 @@
 
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Bodoni Moda', serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #0d0d0d;
+  background-color: white;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,26 +16,4 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.shadow-neon {
-  box-shadow: 0 0 10px #ff0099, 0 0 20px #ff0099, 0 0 40px #ff0099, 0 0 80px #ff0099;
-}
-.text-neon {
-  color: #ff0099;
-  text-shadow: 0 0 5px #ff0099, 0 0 10px #ff0099, 0 0 20px #ff0099;
-}
 
-.text-glow {
-  color: #ff0099 !important;
-  text-shadow: 
-    0 0 10px #ff0099, 
-    0 0 20px #ff0099,
-    0 0 40px #ff0099, 
-    0 0 80px #ff0099 !important;
-}
-.text-glow:hover {
-  text-shadow: 
-    0 0 20px #ff0099,
-    0 0 40px #ff0099, 
-    0 0 80px #ff0099,
-    0 0 160px #ff0099 !important;
-}

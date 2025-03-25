@@ -16,7 +16,7 @@ function HeroSection() {
         <span className="text-[10px] sm:text-[15px] md:text-[20px] lg:text-[30px]">Full-Stack Developer | Coder | Creator | Trader</span>
           </h2>
       </div>
-      <div className="relative flex-row w-full text-gray-500 z-41">
+      <div className="relative flex-row w-full text-stone-900 z-41">
           <div className="absolute bottom-[200px] sm:bottom-[250px] left-5 md:bottom-[350px] md:left-50 lg:bottom-[450px] lg:left-65 transform -translate-x-1/2 text-center text-[10px] md:text-lg lg:text-xl drop-shadow-[0_5px_10px_rgba(0,0,0,0.3)] font-medium text-gray-500">
           <p className="">CODE IS MY LANGUAGE</p>
           <p>LIFE IS MY STACK.</p>

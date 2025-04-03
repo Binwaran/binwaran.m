@@ -37,7 +37,6 @@ function App() {
           <Route path="/notifications" element={<Notifications/>} />
           <Route path="/post/:id" element={<Article />} />
           <Route path="*" element={<NotFound />} />
-          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       

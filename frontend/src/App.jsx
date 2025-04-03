@@ -13,6 +13,7 @@ import Search from "./pages/Search";
 import Profile from "./pages/Profile";
 import Notifications from "./pages/Notifications";
 import {Footer} from "./components/Footer";
+import NotFound from "./pages/NotFound"; // Optional, if exists
 
 
 
@@ -34,6 +35,9 @@ function App() {
           <Route path="/search" element={<Search />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/notifications" element={<Notifications/>} />
+          <Route path="/post/:id" element={<Article />} />
+          <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       

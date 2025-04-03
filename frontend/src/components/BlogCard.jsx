@@ -1,4 +1,4 @@
-function BlogCard({ image, category, title, description, author, date }) {
+function BlogCard({ id,image, category, title, description, author, date }) {
     return (
       <div className="flex flex-col gap-4">
         <a href="#" className="relative h-[212px] sm:h-[360px]">
@@ -14,7 +14,7 @@ function BlogCard({ image, category, title, description, author, date }) {
               {category}
             </span>
           </div>
-          <a href="#">
+          <a href={`/post/${id}`}>
             <h2 className="text-start font-bold text-xl mb-2 line-clamp-2 hover:underline">
               {title}
             </h2>

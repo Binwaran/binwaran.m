@@ -52,6 +52,11 @@ export default function ArticleSection() {
   useEffect(() => {
     fetchPosts();
   }, [fetchPosts]); // ✅ เปลี่ยนเป็นแบบนี้
+
+  const [searchInput, setSearchInput] = useState("");
+const filteredSearch = posts.filter(post =>
+  post.title.toLowerCase().includes(searchInput.toLowerCase())
+);
   
 
   // รีเซตข้อมูลเมื่อเปลี่ยน category
@@ -93,13 +98,33 @@ export default function ArticleSection() {
 
           {/* 🔍 Search bar (ยังไม่ทำงานในเวอร์ชันนี้) */}
           <div className="relative w-full md:w-64">
-            <Input
-              type="text"
-              placeholder="Search"
-              className="pl-10 w-full"
-            />
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />
-          </div>
+              <Input
+                type="text"
+                placeholder="Search"
+                className="pl-10 w-full"
+                value={searchInput}
+                onChange={(e) => setSearchInput(e.target.value)}
+              />
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />
+
+              {searchInput && (
+                <ul className="absolute z-10 w-full bg-white shadow rounded mt-1 max-h-48 overflow-auto">
+                  {filteredSearch.length === 0 ? (
+                    <li className="p-2 text-sm text-gray-500">No results</li>
+                  ) : (
+                    filteredSearch.map((post) => (
+                      <li
+                        key={post.id}
+                        className="p-2 hover:bg-gray-100 cursor-pointer text-sm"
+                        onClick={() => window.location.href = `/post/${post.id}`}
+                      >
+                        {post.title}
+                      </li>
+                    ))
+                  )}
+                </ul>
+              )}
+            </div>
 
           {/* Mobile dropdown */}
           <div className="w-full md:hidden">

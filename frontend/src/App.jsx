@@ -13,7 +13,8 @@ import Search from "./pages/Search";
 import Profile from "./pages/Profile";
 import Notifications from "./pages/Notifications";
 import {Footer} from "./components/Footer";
-import NotFound from "./pages/NotFound"; // Optional, if exists
+import NotFound from "./pages/NotFound";
+
 
 
 

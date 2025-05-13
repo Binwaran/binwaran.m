@@ -17,7 +17,6 @@ import NotFound from "./pages/NotFound";
 
 
 
-
 function App() {
   return (
     <Router> {/* Router ต้องเป็นตัวครอบหลัก */}

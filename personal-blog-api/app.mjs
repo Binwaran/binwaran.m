@@ -2,6 +2,7 @@
 import express from "express";
 import cors from "cors";
 import userRoutes from "./routers/user.routes.mjs";
+import postRoutes from "./routers/post.routes.mjs";
 
 const app = express();
 const port = process.env.PORT || 4000;
@@ -11,6 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/", userRoutes);
+app.use("/", postRoutes);
 
 // Route สำหรับดูโปรไฟล์ John
 app.get("/profiles", (req, res) => {

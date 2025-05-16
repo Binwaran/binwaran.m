@@ -5,21 +5,21 @@ const projects = [
     title: 'Pet-sitter',
     description:
       'Full stack web application for booking pet sitters, with user authentication, profile management, booking flow, and admin dashboard. Built with Supabase for backend-as-a-service and PostgreSQL database.',
-    image: '/public/pet-sitter.png',
+    image: '/pet-sitter.png',
     link: 'https://pet-sitter-app-git-main-nofffies-projects.vercel.app/',
   },
   {
     title: 'Tourist Attraction',
     description:
       'Tourist Attraction — React frontend app for browsing travel destinations with dynamic keyword filtering and responsive UI using Tailwind CSS.',
-    image: '/public/tourist-attraction.png',
+    image: '/tourist-attraction.png',
     link: 'https://tourist-attraction-i5vhly47o-nofffies-projects.vercel.app/',
   },
   {
     title: 'Question API',
     description:
       'Question API is a backend service built with Node.js and Express.js, designed for managing a collection of quiz or survey questions. It supports CRUD operations with PostgreSQL as the data store',
-    image: '/public/question-api.png',
+    image: '/question-api.png',
     link: 'https://github.com/Binwaran/backend-skill-checkpoint-express-server',
   },
 ]

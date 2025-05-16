@@ -19,7 +19,7 @@ const projects = [
     title: 'Question API',
     description:
       'Question API is a backend service built with Node.js and Express.js, designed for managing a collection of quiz or survey questions. It supports CRUD operations with PostgreSQL as the data store',
-    image: '/question-api.png',
+    image: '/question-API.png',
     link: 'https://github.com/Binwaran/backend-skill-checkpoint-express-server',
   },
 ]
